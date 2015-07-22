@@ -1,3 +1,22 @@
+Antriebsset 1:
+http://www.conrad.ch/ce/de/product/2500000/DJI-E310-Tuning-Antriebsset-fuer-3S-oder-4S-Quadrocopter?queryFromSuggest=true
+DJI E310 Tuning Antriebsset für 3S oder 4S Quadrocopter Abfluggewicht 1-2.5kg (Eigengewicht 464g, Preis: CHF 179.95)
+
+http://www.eflight.ch/pi/ePower-EXP-eco43.html
+ePower EXP eco-30C 3700mAh 4S1P 14.8V (140x43x35mm/424g)   Preis: CHF 69.00 
+
+Gesamtkosten : CHF 248.95
+Gesamtgewicht: 888g
+Verbleibende Nutzlast: max. 1612g
+
+Antriebsset 2:
+http://www.conrad.ch/ce/de/product/2500002/DJI-E800-Tuning-Antriebsset-6S-fuer-Quadrokopter-Abfluggewicht-3-5-Kg?queryFromSuggest=true
+DJI E800 Tuning Antriebsset 6S für Quadrokopter Abfluggewicht 3-5 Kg (Eigengewicht 672g, Preis: CHF 329.95)
+
 Akku:
-http://www.eflight.ch/pi/ePower-EXP-eco41.html
-ePower EXP eco-30C 3700mAh 2S1P 7.4V (136x43x26mm/235g)
+http://www.eflight.ch/pi/ePower-EXP-eco43.html
+ePower EXP eco-30C 5000mAh 6S1P 22.2V (44x62x140mm - 777g)  Preis: CHF 124.00 
+
+Gesamtkosten : CHF 453.95
+Gesamtgewicht: 1449g
+Verbleibende Nutzlast: max. 3551g
