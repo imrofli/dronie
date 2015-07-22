@@ -17,6 +17,7 @@
 package conf;
 
 
+import controllers.StatusController;
 import ninja.AssetsController;
 import ninja.Router;
 import ninja.application.ApplicationRoutes;
@@ -27,8 +28,9 @@ public class Routes implements ApplicationRoutes {
     @Override
     public void init(Router router) {  
         
-        router.GET().route("/").with(ApplicationController.class, "index");
-        router.GET().route("/hello_world.json").with(ApplicationController.class, "helloWorldJson");
+//        router.GET().route("/").with(ApplicationController.class, "index");
+        router.GET().route("/status").with(StatusController.class, "status");
+        router.GET().route("/").with(StatusController.class, "status");
         
  
         ///////////////////////////////////////////////////////////////////////
@@ -40,7 +42,8 @@ public class Routes implements ApplicationRoutes {
         ///////////////////////////////////////////////////////////////////////
         // Index / Catchall shows index page
         ///////////////////////////////////////////////////////////////////////
-        router.GET().route("/.*").with(ApplicationController.class, "index");
+//        router.GET().route("/.*").with(ApplicationController.class, "index");
+        router.GET().route("/.*").with(StatusController.class, "status");
     }
 
 }

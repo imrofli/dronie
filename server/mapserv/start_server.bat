@@ -1,0 +1,2 @@
+mvn ninja:run
+pause
