@@ -12,10 +12,16 @@
                     <h3 class="panel-title">Rotors</h3>
                 </div>
                 <div class="panel-body">
-                    <span class="label label-success">Rotor 1</span>
-                    <span class="label label-danger">Rotor 2</span>
-                    <span class="label label-success">Rotor 3</span>
-                    <span class="label label-warning">Rotor 4</span>
+                        <#list dronie.getNewestStatus().rotors as rotor>
+                            <#if rotor.rpm <= 12000 && rotor.rpm gt 6000>
+                                <span class="label label-warning">
+                            <#elseif rotor.rpm <= 6000>
+                                <span class="label label-danger">
+                            <#else>
+                                <span class="label label-success">
+                            </#if>
+                            ${rotor.rotorPosition}</span>
+                        </#list>
                 </div>
             </div>
             <div class="panel panel-default">
