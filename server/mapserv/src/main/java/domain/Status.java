@@ -20,6 +20,7 @@ public class Status {
     private List<Akku> akkus =  new ArrayList<>(4);
     private DateTimeZone timeZone = DateTimeZone.forID("Europe/Zurich");
     private DateTime entryTime;
+    private List<Position> positions = new ArrayList<>();
 
     public Status() {
 
@@ -71,6 +72,22 @@ public class Status {
 
     public DateTime getEntryTime() {
         return entryTime;
+    }
+
+    public List<Position> getPositions() {
+        return positions;
+    }
+
+    public void setPositions(List<Position> positions) {
+        this.positions = positions;
+    }
+
+    public Position getLatestPosition(){
+        return positions.get(positions.size()-1);
+    }
+
+    public void addPosition(Position position){
+        positions.add(position);
     }
 
     @Override

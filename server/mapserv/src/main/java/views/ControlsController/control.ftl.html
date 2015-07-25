@@ -1,0 +1,18 @@
+<#import "../layout/defaultLayout.ftl.html" as layout>
+    <@layout.myLayout "Drone Controls">
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Drone Control</h3>
+        </div>
+        <div class="panel-body">
+            <#if controlscheme.name() == "CONTROLLER">
+                <#include "controller.ftl.html"/>
+            <#else>
+                <#include "keyboard.ftl.html"/>
+            </#if>
+        </div>
+    </div>
+
+</@layout.myLayout>

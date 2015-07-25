@@ -44,7 +44,8 @@ public class Akku {
     }
 
     public Double getRemainingLoadPercentage(){
-        return (100.0/maximumLoad) * remainingLoad;
+        Double out = Double.valueOf(Math.round(((100.0/maximumLoad) * remainingLoad) * 100.0)/100.0);
+        return out;
     }
 
     @Override

@@ -17,7 +17,9 @@
 package conf;
 
 
+import controllers.ControlsController;
 import controllers.StatusController;
+import controllers.VisionController;
 import ninja.AssetsController;
 import ninja.Router;
 import ninja.application.ApplicationRoutes;
@@ -30,6 +32,8 @@ public class Routes implements ApplicationRoutes {
         
 //        router.GET().route("/").with(ApplicationController.class, "index");
         router.GET().route("/status").with(StatusController.class, "status");
+        router.GET().route("/vision").with(VisionController.class, "vision");
+        router.GET().route("/control").with(ControlsController.class, "control");
         router.GET().route("/").with(StatusController.class, "status");
         
  

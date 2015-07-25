@@ -1,10 +1,7 @@
 package controllers;
 
 import com.google.inject.Inject;
-import domain.Akku;
-import domain.Dronie;
-import domain.Rotor;
-import domain.Status;
+import domain.*;
 import ninja.Result;
 import ninja.Results;
 import org.apache.commons.lang.math.RandomUtils;
@@ -15,17 +12,18 @@ import org.apache.commons.lang.math.RandomUtils;
 public class StatusController {
     @Inject
     private Dronie dronie;
-    private Integer counter =1;
 
 
     public Result status() {
-        counter += dronie.getStatusList().size();
+        dronie.getStatusList().size();
         Status status = new Status();
+        Position position = new Position(9.063836,47.047136,RandomUtils.nextDouble()*20.0);
+        status.addPosition(position);
         Double maxLoad =3600.0;
-        Double realLoad = maxLoad-counter*300;
-        status.addAkku(new Akku(counter, maxLoad, realLoad));
+        Double realLoad = 1.0*RandomUtils.nextInt(3600);
+        status.addAkku(new Akku(1, maxLoad, realLoad));
 
-        for (int i = 1; i <= counter; i++) {
+        for (int i = 1; i <= 4; i++) {
             Rotor.RotorPosition rotorPosition;
             switch (i){
                 case 1:
